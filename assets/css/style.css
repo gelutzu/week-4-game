@@ -1,0 +1,23 @@
+.crystals {
+    
+    display: inline;
+
+}
+h1{
+	font-size: 32px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.sum {
+    clear: left;
+}
+.winsAndLosses {
+    float: left;
+}
+#row {
+    display: inline;
+    clear: both;
+}

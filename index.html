@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>week-4-game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <h1>CrystalsCollector!</h1>
+
+    <div id = "instructions">
+        <p>You will be given a random number at the start of the game.
+            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+            You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+            The value of each crystal is hidden from you until you click on it.
+            Each time when the game starts, the game will change the values of each crystal. 
+        </p>
+    </div>
+
+    <h1>Number to Guess: <span id = "number-to-guess"></span></h1>
+    
+    <!-- Note that this div is now empty. We will fill it dynamically -->
+    <div clas s="crystals">
+        <img id = "crystal1" class = "crystal-image" src = "assets/images/crystal1.jpg">
+        <img id = "crystal2" class = "crystal-image" src = "assets/images/crystal2.jpg">
+        <img id = "crystal3" class = "crystal-image" src = "assets/images/crystal3.jpg">
+        <img id = "crystal4" class = "crystal-image" src = "assets/images/crystal4.jpg">
+
+    </div>
+    <div id = "row">
+        <div class = "sum">
+            <h1>Your total score is:
+                <span id = "finalSum"></span>
+            </h1>
+        </div>
+        <div class = "winsAndLosses">
+            <h2>Wins:
+                <span id = "numberWins"></span>
+                </br>
+                Losses: 
+                <span id = "numberLosses"></span>
+            </h2>
+        </div>
+    </div>
+
+   
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+    
+</body>
+
+</html>
