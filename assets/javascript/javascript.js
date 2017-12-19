@@ -16,8 +16,8 @@ console.log(randomNumber2);
 console.log(randomNumber3);
 console.log(randomNumber4);
 
-var sum= 0; 
-var wins= 0;
+var sum = 0; 
+var wins = 0;
 var losses = 0;
 // wins and losses counter
 $("#numberWins").text(wins);
@@ -36,7 +36,7 @@ function reset() {
     console.log(randomNumber2);
     console.log(randomNumber3);
     console.log(randomNumber4);
-
+    
     sum = 0;
     $("#finalSum").text(sum);
 } 
@@ -57,21 +57,21 @@ function lose() {
 //click function for crystal1
 $("#crystal1").on("click", function() {
     sum += randomNumber1;
-    
-    $("#finalSum").text(sum); 
     console.log(sum);
+    $("#finalSum").text(sum); 
+    
     if (sum == targetNumber) { 
         win();
      }
-    else if ( sum > targetNumber) {
+    else if ( sum > targetNumber) { 
          lose();
      }   
 });  
 $("#crystal2").on ("click", function() {
     sum += randomNumber2;
-  
-    $("#finalSum").text(sum); 
     console.log(sum);
+    $("#finalSum").text(sum); 
+    
     if (sum == targetNumber) {
         win();
     }
@@ -81,9 +81,9 @@ $("#crystal2").on ("click", function() {
 });  
 $("#crystal3").on("click", function() {
     sum += randomNumber3;
- 
-    $("#finalSum").text(sum);
     console.log(sum);
+    $("#finalSum").text(sum);
+    
     if (sum == targetNumber) {
         win();
     }
@@ -92,10 +92,10 @@ $("#crystal3").on("click", function() {
     }   
 });  
 $("#crystal4").on("click", function() {
-    sum = sum + randomNumber4;
-  
-    $("#finalSum").text(sum);
+    sum += randomNumber4;
     console.log(sum);
+    $("#finalSum").text(sum);
+    
     if (sum == targetNumber) {
         win();
     }

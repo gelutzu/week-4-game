@@ -1,10 +1,23 @@
+#container {
+    width: 60%;
+    margin: 10px;
+    border: solid  1px black;
+    background-image: url("../images/background.jpg");
+}
+#header {
+    margin: 10px;
+    padding: 10px;
+}
+
 .crystals {
     
     display: inline;
 
 }
 h1{
-	font-size: 32px;
+    font-size: 32px;
+    text-align: center;
+    padding: 5px;
 }
 img {
     width: 100px;
@@ -12,12 +25,14 @@ img {
     float: left;
 }
 .sum {
-    clear: left;
+    float: left;
+    width: 30%;
+
 }
 .winsAndLosses {
     float: left;
+    width: 30%;
 }
 #row {
-    display: inline;
-    clear: both;
+   clear: both; 
 }
