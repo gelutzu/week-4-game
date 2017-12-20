@@ -1,23 +1,24 @@
-.crystals {
-    
-    display: inline;
-
+#container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid black;
+    background-image: url("../images/background.jpg");
 }
-h1{
-	font-size: 32px;
+#header {
+    text-align: center;
 }
-img {
-    width: 100px;
+.crystal-image {
     height: 100px;
-    float: left;
+    width: 100px;
 }
-.sum {
-    clear: left;
+h1 {
+    font-size: 32px;
+    padding: 10px;
 }
-.winsAndLosses {
-    float: left;
-}
-#row {
-    display: inline;
-    clear: both;
+p {
+    font-style: bold;
+    font-size: 20px;
 }

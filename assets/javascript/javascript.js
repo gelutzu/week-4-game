@@ -45,14 +45,16 @@ function win() {
     alert("You won!");
     wins++; 
     $("#numberWins").text(wins);
-    reset();
+    setTimeout(reset, 3000);
+    
 }
 //create function lose to keep track of losses
 function lose() {
     alert ("You lose!");
     losses++;
     $("#numberLosses").text(losses);
-    reset();
+    setTimeout(reset, 3000);
+    
 }
 //click function for crystal1
 $("#crystal1").on("click", function() {
